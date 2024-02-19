@@ -1,0 +1,15 @@
+{% extends "master.html" %} {% block title %} My Tennis Club {% endblock %} 
+{% block content %}
+<h1>My Tennis Club</h1>
+
+<h3>Members</h3>
+
+<p>Check out all our <a href="members/">members</a></p>
+
+<form action="add/">
+  Enter 1st number : <input type="text" name="num1" /> 
+  Enter 2nd number : <input type="text" name="num2" />
+  <input type="submit" />
+</form>
+
+{% endblock %}

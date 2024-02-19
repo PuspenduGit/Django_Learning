@@ -1,0 +1,7 @@
+{% extends "master.html" %} {% block title %} Result {% endblock %} 
+{% block content %}
+{% csrf_token %}
+<h1>Result</h1>
+<p>Addition of {{product.num1}} and {{product.num2}} is {{ product.result }}</p>
+<p><a href="/">Back to main</a></p>
+{% endblock %}
